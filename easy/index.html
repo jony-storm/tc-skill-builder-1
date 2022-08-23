@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="thor-top">
+        <div class="left">
+          <p class="company-name">Thor</p>
+          <p class="company-desc big">Find perfect Interior Designer for you</p>
+          <p class="company-desc">
+            We will personally help you to choose the best
+            <span class="bold-txt">interior designer</span> for your project and
+            <span class="bold-txt">without extra cost</span>
+          </p>
+          <button class="btn learn-more">Learn More</button>
+        </div>
+        <div class="right">
+          <div class="padding-div">
+            <form class="select-designer-form">
+              <p>Find your designer</p>
+              <div class="select-wrapper">
+                <label for="project-type"
+                  >What type of project your are doing?</label
+                >
+                <select name="project-type" id="project-type">
+                  <option selected>(Choose your project type)</option>
+                  <option>Dhaka</option>
+                  <option>Rajshahi</option>
+                  <option>Rangpur</option>
+                  <option>Thakurgaon</option>
+                  <option>Dinajpur</option>
+                  <option>Chittagaon</option>
+                </select>
+              </div>
+              <div class="select-wrapper">
+                <label for="location">Where is your project?</label>
+                <select name="location" id="location">
+                  <option selected>(Choose your location)</option>
+                  <option>Home/Residential</option>
+                  <option>Restaurent/Bar</option>
+                  <option>Office</option>
+                </select>
+              </div>
+              <button class="btn">
+                Next <i class="fa fa-arrow-right" style="margin-left: 5px"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="thor-middle">
+        <p class="title">Lookig for a great Interior Designer?</p>
+        <p class="desc">
+          We'r the Asia's leading company for interior designers, connecting
+          discerning clients with the best interior design talent. We have a
+          proven way of finding the the right designers for our clients and
+          offer unparalleled access to some of the best interior designers.
+          Furthermore, we operate independently that's why our recommendations
+          are completely unbiased.
+        </p>
+        <i
+          class="fa fa-chevron-down fa-2x"
+          style="color: rgb(234, 11, 134)"
+        ></i>
+      </div>
+      <div class="thor-services">
+        <div class="overlay">
+          <p class="title">WHY YOU WILL LOOK FOR US?</p>
+          <hr />
+          <p class="title big">Personal Service: Get The Best Designers</p>
+          <p class="desc">
+            By finding out the details of your tastes and needs, we can
+            recommend exactly the right interior designers for your project. We
+            can introduce you to our best designers whom you may not know but
+            will match precisely with your tastes and budgets.
+          </p>
+          <button class="btn">Get Started</button>
+        </div>
+      </div>
+      <div class="thor-contact-us">
+        <div class="contact-info">
+          <p class="tele-phone-no">
+            <i
+              class="fa fa-phone"
+              style="color: rgb(234, 11, 134); margin-right: 10px"
+            ></i
+            >Tel: +88 02 88123444, +88 02 8836234
+          </p>
+          <p class="email">
+            <i
+              class="fa fa-envelope"
+              style="color: rgb(234, 11, 134); margin-right: 10px"
+            ></i
+            >Email: customer.service@thor.com
+          </p>
+          <p class="phone-no">
+            <i
+              class="fa fa-location-arrow"
+              style="color: rgb(234, 11, 134); margin-right: 10px"
+            ></i
+            >Address: Plot 15, Road 71, Gulshan, Dhaka-1212
+          </p>
+        </div>
+        <form class="contact-form">
+          <div class="wrapper">
+            <label for="fname">Full Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Your fullname..."
+            />
+          </div>
+
+          <div class="wrapper">
+            <label for="email">Email Address</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email address..."
+            />
+          </div>
+
+          <div class="wrapper">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option selected="true">(Choose your country)</option>
+              <option>India</option>
+              <option>Pakistan</option>
+              <option>Nepal</option>
+              <option>China</option>
+            </select>
+          </div>
+          <div class="wrapper">
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write about your project.."
+              style="height: 100px"
+            ></textarea>
+          </div>
+
+          <button class="btn">Contact Us</button>
+        </form>
+      </div>
+      <div class="thor-footer">
+        <p>&copy;Powered by Thor Interior Designer Corp</p>
+      </div>
+    </div>
+  </body>
+</html>
