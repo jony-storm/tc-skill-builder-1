@@ -14,11 +14,10 @@
 .thor-top {
   width: 100%;
   min-height: 600px;
-  background-image: url("./img/Majlis.RGB_color-1140x580.jpg");
+  background-image: url("../img/Majlis.RGB_color-1140x580.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  position: relative;
 }
 
 .thor-top .left {
@@ -54,10 +53,11 @@
 }
 
 .btn {
-  padding: 8px 15px;
+  padding: 10px 20px;
   background-color: rgb(234, 11, 134);
   color: white;
-  font-size: 15px;
+  text-decoration: none;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -65,7 +65,7 @@
 }
 
 .btn:hover {
-  opacity: 0.95;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -137,7 +137,7 @@
 .thor-middle {
   width: 100%;
   text-align: center;
-  background-color: rgba(35, 153, 249, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 20% 15%;
 }
 
@@ -157,7 +157,7 @@
 
 .thor-services {
   width: 100%;
-  background-image: url('./img/Purple-modern-sofa-1024x640.webp');
+  background-image: url('../img/Purple-modern-sofa-1024x640.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -195,8 +195,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: rgba(35, 153, 249, 0.2);
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 16px;
@@ -205,6 +205,11 @@
 .thor-contact-us .contact-info {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
 }
 
 .thor-contact-us .contact-form {
@@ -246,7 +251,8 @@
   padding: 10px;
 }
 
-@media screen and (max-width: 700px) {
+ /* Extra small devices (mobile phones, 480px and down) */
+@media screen and (max-width: 480px) {
   .thor-top {
     flex-direction: column;
   }
@@ -262,19 +268,11 @@
   }
 
   .padding-div {
-    width: 80%;
-  }
-
-  .left .btn {
-    display: none;
-  }
-
-  .left .company-name {
-    display: none;
+    width: 100%;
   }
 
   .select-designer-form .btn {
-    width: 50%;
+    width: 100%;
   }
 
   .thor-contact-us {
@@ -282,16 +280,96 @@
   }
 
   .thor-contact-us .contact-info {
-    margin: 20px;
+    text-align: center;
+  }
+
+  .thor-contact-us .contact-form {
+    width: 100%;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+}
+
+/* for tabs and phones portrait mode(481px to 768px) */
+@media screen and (min-width: 481px) {
+  .thor-top {
+    flex-direction: column;
+  }
+
+  .thor-top .left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .thor-top .right {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .padding-div {
+    width: 60%;
+  }
+
+  .select-designer-form .btn {
+    width: 40%;
+  }
+
+  .thor-contact-us {
+    flex-direction: column;
+  }
+
+  .thor-contact-us .contact-info {
     text-align: center;
   }
 
   .thor-contact-us .contact-form {
     width: 60%;
-    margin-bottom: 20px;
+  }
+
+  .contact-form .btn {
+    width: 40%;
+  }
+}
+
+/* for desktop or laptops screens (more than 769px wide)*/
+@media screen and (min-width: 769px) {
+  .thor-top {
+    flex-direction: row;
+
+  }
+
+  .thor-top .left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .thor-top .right {
+    justify-content: flex-end;
+  }
+
+  .padding-div {
+    width: 80%;
+  }
+
+  .select-designer-form .btn {
+    width: 70%;
+  }
+
+  .thor-contact-us {
+    flex-direction: row;
+  }
+
+  .thor-contact-us .contact-form {
+    width: 40%;
   }
 
   .contact-form .btn {
     width: 60%;
+  }
+
+  .thor-contact-us .contact-info {
+    text-align: left;
   }
 }

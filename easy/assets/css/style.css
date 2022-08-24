@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.thor-top {
+  width: 100%;
+  min-height: 600px;
+  background-image: url("../img/Majlis.RGB_color-1140x580.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.thor-top .left {
+  flex: 7;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.left .company-name {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.left .company-desc {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.company-desc .bold-txt {
+  font-weight: bold;
+  color: white;
+}
+
+.left .big {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 8px 15px;
+  background-color: rgb(234, 11, 134);
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+.thor-top .right {
+  flex: 5;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right .padding-div {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.padding-div .select-designer-form {
+  color: white;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-designer-form p {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.select-designer-form .select-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.select-wrapper select {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  color: grey;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.select-wrapper select:hover {
+  outline: none;
+}
+
+.select-wrapper select:focus {
+  outline: none;
+}
+
+.select-wrapper label {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.select-designer-form .btn {
+  width: 70%;
+}
+
+.thor-middle {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(35, 153, 249, 0.2);
+  padding: 20% 15%;
+}
+
+.thor-middle .title {
+  color: black;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.thor-middle .desc {
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.thor-services {
+  width: 100%;
+  background-image: url('../img/Purple-modern-sofa-1024x640.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thor-services .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 20% 15%;
+  font-size: 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(230, 229, 229);
+}
+
+.overlay .title {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.overlay hr {
+  width: 20%; 
+  margin:auto;
+}
+
+.overlay .big {
+  font-size: 24px;
+}
+
+.overlay .desc {
+  margin-bottom: 20px;
+}
+
+.thor-contact-us {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: rgba(35, 153, 249, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+}
+
+.thor-contact-us .contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.thor-contact-us .contact-form {
+  background-color: black;
+  border-radius: 10px;
+  padding: 30px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.contact-form .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.contact-form input, select, textarea {
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 8px;
+}
+
+.contact-form .btn {
+  width:50%;
+}
+
+.thor-footer {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+}
+
+ /* Extra small devices (mobile phones, 480px and down) */
+@media screen and (max-width: 480px) {
+  .thor-top {
+    flex-direction: column;
+  }
+
+  .thor-top .left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .thor-top .right {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .padding-div {
+    width: 100%;
+  }
+
+  .select-designer-form .btn {
+    width: 100%;
+  }
+
+  .thor-contact-us {
+    flex-direction: column;
+  }
+
+  .thor-contact-us .contact-info {
+    text-align: center;
+  }
+
+  .thor-contact-us .contact-form {
+    width: 100%;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+}
+
+/* for tabs and phones portrait mode(481px to 768px) */
+@media screen and (min-width: 481px) {
+  .thor-top {
+    flex-direction: column;
+  }
+
+  .thor-top .left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .thor-top .right {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .padding-div {
+    width: 60%;
+  }
+
+  .select-designer-form .btn {
+    width: 40%;
+  }
+
+  .thor-contact-us {
+    flex-direction: column;
+  }
+
+  .thor-contact-us .contact-info {
+    text-align: center;
+  }
+
+  .thor-contact-us .contact-form {
+    width: 60%;
+  }
+
+  .contact-form .btn {
+    width: 40%;
+  }
+}
+
+/* for desktop or laptops screens (more than 769px wide)*/
+@media screen and (min-width: 769px) {
+  .thor-top {
+    flex-direction: row;
+
+  }
+
+  .thor-top .left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .thor-top .right {
+    justify-content: flex-end;
+  }
+
+  .padding-div {
+    width: 80%;
+  }
+
+  .select-designer-form .btn {
+    width: 70%;
+  }
+
+  .thor-contact-us {
+    flex-direction: row;
+  }
+
+  .thor-contact-us .contact-form {
+    width: 40%;
+  }
+
+  .contact-form .btn {
+    width: 60%;
+  }
+
+  .thor-contact-us .contact-info {
+    text-align: left;
+  }
+}
