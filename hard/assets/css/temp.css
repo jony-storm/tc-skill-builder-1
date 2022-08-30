@@ -16,7 +16,7 @@
     height: auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
@@ -34,6 +34,9 @@
 
 .navbar .ham-menu {
     display: none;
+    /* border: 2px solid rgb(234, 11, 134); */
+    /* border-radius: 3px; */
+    /* padding: 5px; */
 }
 
 .navbar .ham-menu:hover {
@@ -44,11 +47,15 @@
 .ham-menu .hori-bar {
     display: block;
     width: 25px;
-    height: 3px;
-    margin: 3px auto;
+    height: 2px;
+    margin-bottom: 3px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: rgb(234, 11, 134);
+    background-color: white;
+}
+
+.ham-menu .hori-bar:last-child {
+    margin-bottom: 0;
 }
 
 .navbar .nav-menu {
@@ -308,7 +315,6 @@ textarea {
     border: none;
     outline: none;
     margin-top: 8px;
-    color: grey;
 }
 
 .contact-form .btn {
@@ -329,15 +335,13 @@ textarea {
     .navbar .nav-menu {
         display: none;
         width: 100%;
-        height: 0;
         flex-direction: column;
         align-items: flex-start;
         background-color: rgb(26, 26, 26);
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .navbar .nav-menu.active {
-        height: auto;
         display: block;
         position: absolute;
         top: 50px;
@@ -403,7 +407,7 @@ textarea {
     }
 
     .thor-contact-us .contact-form {
-        width: 90%;
+        width: 100%;
     }
 
     .contact-form .btn {
@@ -416,7 +420,6 @@ textarea {
     .navbar .nav-menu {
         display: none;
         width: 100%;
-        height: 0;
         flex-direction: column;
         align-items: flex-start;
         background-color: rgb(26, 26, 26);
@@ -424,11 +427,11 @@ textarea {
     }
 
     .navbar .nav-menu.active {
-        height: auto;
         display: block;
         position: absolute;
         top: 50px;
         left: 0;
+        height: 90px;
     }
 
     .nav-menu .nav-item {
@@ -440,7 +443,6 @@ textarea {
 
     .navbar .ham-menu {
         display: block;
-        position: relative;
     }
 
     .ham-menu.active .hori-bar:nth-child(2) {
@@ -448,15 +450,11 @@ textarea {
     }
 
     .ham-menu.active .hori-bar:nth-child(1) {
-        position: absolute;
-        top: 50%;
-        transform: rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
 
     .ham-menu.active .hori-bar:nth-child(3) {
-        position: absolute;
-        top: 50%;
-        transform: rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
     
     .thor-top {
@@ -494,32 +492,12 @@ textarea {
     }
 
     .contact-form .btn {
-        width: 70%;
+        width: 40%;
     }
 }
 
 /* for desktop or laptops screens (more than 769px wide)*/
 @media screen and (min-width: 769px) {
-    .navbar .nav-menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgb(26, 26, 26);
-        width: auto;
-    }
-
-    .nav-menu .nav-item {
-        margin-left: 20px;
-        padding: 0;
-        width: auto;
-        border-bottom: none;
-    }
-
-    .navbar .ham-menu {
-        display: none;
-    }
-
     .thor-top {
         flex-direction: row;
     }

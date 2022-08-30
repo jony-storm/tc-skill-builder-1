@@ -4,7 +4,7 @@
     <title>Thor | Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -12,6 +12,24 @@
   </head>
   <body>
     <div class="container">
+      <header class="thor-header">
+        <nav class="navbar">
+          <span class="nav-logo">Thor</span>
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+              <a href="./home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+          <div class="ham-menu" id="ham-menu">
+            <span class="hori-bar"></span>
+            <span class="hori-bar"></span>
+            <span class="hori-bar"></span>
+          </div>
+        </nav>
+      </header>
       <div class="thor-top">
         <div class="left">
           <p class="company-name">Thor</p>
@@ -88,7 +106,9 @@
       </div>
       <div class="thor-contact-us">
         <div class="contact-info">
-          <p class="title" style="font-size: 24px;">Provide your infos to connect with us: </p>
+          <p class="title" style="font-size: 24px">
+            Provide your infos to connect with us:
+          </p>
           <p class="tele-phone-no">
             <i
               class="fa fa-phone"
@@ -159,5 +179,25 @@
         <p>&copy;Powered by Thor Interior Designer Corp</p>
       </div>
     </div>
+    <script>
+      const ham_menu = document.getElementById("ham-menu"),
+            nav_menu = document.getElementById("nav-menu"),
+            nav_link = document.querySelectorAll("nav-link");
+
+      ham_menu.addEventListener("click", toggleHamburgerMenu);
+
+      function toggleHamburgerMenu() {
+        ham_menu.classList.toggle("active");
+        nav_menu.classList.toggle("active");
+      }
+
+
+      nav_link.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        ham_menu.classList.remove("active");
+        nav_menu.classList.remove("active");
+      }
+    </script>
   </body>
 </html>
